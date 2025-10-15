@@ -21,7 +21,7 @@ const SignIn = () => {
                     lastLoggedAt: result.user?.metadata?.lastSignInTime
                 }
                 // update last logged at in the database
-                fetch('https://coffee-store-server-with-auth-8wcgnxkf9-msakibhr-5561s-projects.vercel.app/user', {
+                fetch('http://localhost:5000/user', {
                     method: 'PATCH',
                     headers: {
                         'content-type': 'application/json'
